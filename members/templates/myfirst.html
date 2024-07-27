@@ -1,0 +1,10 @@
+{% extends base.html %}
+{% block body %}
+    <h3>My name is {{str}}</h3>
+    <ul>
+      {%for x in members%}
+      <li>{{x.firstName}} {{x.lastName}}</li>
+      {%endfor%}
+    </ul>
+ 
+    {% endblock %}

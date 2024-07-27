@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% block title %}My Tennis Club{% endblock title %} 
+{%block body %}
+<h3>Members</h3>
+    <ul>
+      {%for x in mymembers%}
+      <li><a href="details/{{x.id}}"> {{x.firstName}} {{x.lastName}}</a></li>
+      {%endfor%}
+    </ul>
+    {% endblock %}
+
+{% comment %} <!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    
+  </body>
+</html> {% endcomment %}
